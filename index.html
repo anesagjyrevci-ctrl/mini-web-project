@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learn & Grow | Faqe edukative</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family : Arial, sans-serif;
+            background: #f3f6ff;
+            color: #24304a;
+            line-height: 1.6;
+        }
+        header {
+            background: #3448a5;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center:
+        }
+        header h2 {
+            font-size: 25px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .hero{
+            text-align: center;
+            padding: 85px 20px;
+            background: linear-gradient(135deg, #ele8ff, #ffffff);
+        }
+        .hero hl {
+            font-size: 42px;
+            margin-bottom; 18px;
+            color: #3448a5;
+        }
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 25px;
+            font-size: 18px;
+        }
+        button {
+            background: #3448a5;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer:
+        }
+        button:hover {
+            background: #243582;
+        }
+        #mesazhi {
+            margin-top:20px;
+            font-weight: bold;
+            color: #3448a5;
+        }
+        .cards {
+            padding: 50px 8%;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap; 
+        }
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 16px;
+            width: 280px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0,07);
+            text-align: center;
+        }
+        .card h3 {
+            color: #3448a5;
+            margin-bottom: 10px;
+        }
+        emoji [
+            font-size: 38px;
+            margin-bottom: 12px;
+        ]
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #24304a;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .hero hl {
+                font-size: 32px;
+            }
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Learn & Grow</h2>
+
+        <nav>
+            <a href="#kryefaqja">Kryefaqja</a>
+            <a href="#meso">Meso</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="kryefaqja">
+        <h1>Meso dicka te re cdo dite!</h1>
+        <p> Mire se vini ne Learn & Grow, nje hapsire edukative
+            qe ju motivon te mesoni, te zhvilloheni dhe te arrini
+            qellimet tuaja.
+        </p>
+        <button onclick="shfaqMesazhin()">
+                            Fillo te mesosh
+        </button>
+        <p id="mesazhi"></p>
+    </section>
+    <section class="cards" id="meso">
+        <div class="card">
+            <div class="emoji">📒</div>
+            <h3>Njohuri te reja</h3>
+            <p>Lexo, hulumto dhe zbulo ide te reja qdo dite.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💻</div>
+            <h3>Teknologjia</h3>
+            <p>Perdor teknologjine per ta bere mesimin me interesant.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">✔️</div>
+            <h3>Arrit qellimet</h3>
+            <p>Vendos objektiva te vogla dhe puno drejt suksesit.</p>
+        </div>
+
+    </section>
+    <footer>
+        <p> 2026 Learn & Grow | mesimi eshte nje udhetim.</p>
+    </footer>
+
+    <script>
+        function shfaqMesazhin() {
+            document.getElementById("mesazhi").textContent = "Urime! Hapi i pare drejt dijes fillon sot!" ;
+        }
+        
+    </script>
+</body>
+</html>
